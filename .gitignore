@@ -1,0 +1,22 @@
+# Code::Blocks build outputs
+bin/
+obj/
+
+# Build folders anywhere in project
+**/bin/
+**/obj/
+
+# Compiled files
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.lib
+*.dll
+*.so
+*.cbp
+
+# Code::Blocks user-specific files
+*.depend
+*.layout
