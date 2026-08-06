@@ -1,5 +1,5 @@
-PROJECT_NAME           = "Red-Black Tree"
-PROJECT_BRIEF          = "Generic red-black tree implementation in C++"
+PROJECT_NAME           = "Červený-černý strom"
+PROJECT_BRIEF          = "Implementace Červený-černý stromu"
 
 OUTPUT_DIRECTORY       = docs
 
