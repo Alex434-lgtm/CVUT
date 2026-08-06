@@ -553,7 +553,7 @@ int main()
 	test_reverse_sorted_erase();
 	test_random_erase();
 
-	cout<< "All insert and erase tests passed successfully."<<endl;
+	cout<< "Všechny insert a erase testy úspěšně prošly"<<endl;
 
 
     RBT<int> rbt;

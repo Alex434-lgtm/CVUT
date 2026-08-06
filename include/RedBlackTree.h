@@ -82,10 +82,21 @@ public:
      */
 	RBT();
 	~RBT() = default;
-
+    /**
+    * @brief copy Konstruktor není povolen deep copy není naimplementováno
+    */
 	RBT(const RBT&) = delete;
+    /**
+    * @brief copy assigment operator není povolen deep copy není naimplementováno
+    */
 	RBT& operator=(const RBT&) = delete;
+	/**
+    * @brief Move konstruktor pro přesunutí stromu
+    */
 	RBT(RBT&&) noexcept = default;
+	/**
+    * @brief Move assigment operator pro přesunutí stromu
+    */
 	RBT& operator=(RBT&&) noexcept = default;
 
     /**
