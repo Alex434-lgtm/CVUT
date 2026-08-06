@@ -1,0 +1,12 @@
+bin/
+obj/
+docs/
+
+.git/
+.gitignore
+
+*.exe
+*.o
+*.obj
+*.depend
+*.layout
