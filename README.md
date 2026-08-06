@@ -104,7 +104,7 @@ základní funkcionalita: funkce find pro vyhledávání prvků uvnitř stromu, 
 Dokumentace zdrojového kódu je vytvářena pomocí nástroje
 [Doxygen](https://www.doxygen.nl/).
 
-Hlavní stránka dokumentace nalezneme na veřejně dostupné url:
+Úvodní stránku dokumentace nalezneme na veřejně dostupné url:
 
 ```text
 https://cvut-production.up.railway.app/
