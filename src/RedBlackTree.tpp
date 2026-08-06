@@ -34,6 +34,45 @@ node<T>* RBT<T>::find_key(node<T>* n, const T& key) const{
 
     return nullptr;
 }
+ /**
+ * @brief Odstraní zadaný klíč z červeno-černého stromu.
+ *
+ * @details
+ * proměné které figurují v implementaci:
+ *-     current – uzel odpovídající mazanému klíči,
+ *-     x – uzel, který nahradil fyzicky odstraněný uzel,
+ *-     parent – rodič uzlu x, hlavně když je x == nullptr,
+ *-     c – původní barva fyzicky odstraněného uzlu,
+ *-     temp – dočasný unique_ptr, který uchovává podstrom nebo následníka,
+ *-     y – inorder následník při mazání uzlu se dvěma potomky.
+ * Popis průběhu funkce:
+ * Funkce nejprve najde uzel odpovídající zadanému klíči.
+ * Potom provede jednu ze tří variant běžného BST mazání:
+ *
+ * - uzel nemá levého potomka,
+ * - uzel nemá pravého potomka,
+ * - uzel má oba potomky.
+ *
+ * Při dvou potomcích je použit inorder následník, tedy nejmenší
+ * uzel v pravém podstromu. Pokud byl fyzicky odstraněný uzel
+ * černý, je následně zavolána funkce delete_fixup().
+ *
+ * @par Průběh funkce
+ * 1. Najde uzel s požadovaným klíčem.
+ * 2. Určí jeho potomky a původní barvu.
+ * 3. Přesune vlastnictví podstromů pomocí std::move.
+ * 4. Opraví nevlastnící ukazatele parent.
+ * 5. Sníží tree_size.
+ * 6. V případě odstranění černého uzlu zavolá delete_fixup().
+ *
+ * @param key Klíč, který má být ze stromu odstraněn.
+ *
+ * @retval true Klíč byl nalezen a odstraněn.
+ * @retval false Klíč se ve stromu nenacházel.
+ *
+ * @par Časová složitost
+ * O(log n) pro platný červeno-černý strom.
+ */
 template <typename T>
 bool RBT<T>::erase(const T& key){
 node<T>* current=this->find_key(this->root.get(),key);
@@ -203,6 +242,30 @@ bool RBT<T>::empty() const
 {
 	return this->root == nullptr;
 }
+/**
+ * @brief Vyhledá zadaný klíč v červeno-černém stromu.
+ *
+ * @details
+ * Funkce začíná v kořeni stromu a postupně prochází pouze jednu
+ * větev binárního vyhledávacího stromu.
+ *
+ * @par Průběh funkce
+ * 1. Nastaví ukazatel current na kořen stromu.
+ * 2. Porovná hledaný klíč s klíčem aktuálního uzlu.
+ * 3. Pokud jsou klíče stejné, vrátí true.
+ * 4. Pokud je hledaný klíč menší, pokračuje do levého podstromu.
+ * 5. Pokud je hledaný klíč větší, pokračuje do pravého podstromu.
+ * 6. Jestliže narazí na nullptr, klíč ve stromu neexistuje.
+ *
+ * @param key Klíč, který má být ve stromu vyhledán.
+ *
+ * @retval true Klíč se ve stromu nachází.
+ * @retval false Klíč se ve stromu nenachází.
+ *
+ * @par Časová složitost
+ * O(h), kde h je výška stromu. Pro platný červeno-černý strom
+ * je výška O(log n).
+ */
 template<typename T>
 bool RBT<T>::find(const T& key) const
 {
@@ -222,6 +285,29 @@ bool RBT<T>::find(const T& key) const
 
     return false;
 }
+/**
+ * @brief Ověří všechny důležité invarianty stromu.
+ *
+ * @details
+ * Funkce postupně provede několik nezávislých validačních kontrol.
+ * Jakmile jedna z nich selže, okamžitě vrátí false.
+ *
+ * @par Kontrolované vlastnosti
+ * - prázdný strom musí mít tree_size rovné nule,
+ * - kořen nesmí mít rodiče,
+ * - kořen musí být černý,
+ * - klíče musí splňovat pravidla binárního vyhledávacího stromu,
+ * - červený uzel nesmí mít červeného potomka,
+ * - ukazatele parent musí odpovídat skutečné struktuře stromu,
+ * - všechny cesty k nullptr musí mít stejnou černou výšku,
+ * - skutečný počet uzlů musí odpovídat tree_size.
+ *
+ * @retval true Strom splňuje všechny kontrolované invarianty.
+ * @retval false Alespoň jeden invariant stromu je porušen.
+ *
+ * @par Časová složitost
+ * O(n), protože validační funkce musí navštívit všechny uzly stromu.
+ */
 template <typename T>
 bool RBT<T>::validate() const
 {
@@ -361,7 +447,33 @@ bool RBT<T>::validate_bst(const node<T>* n)const
 
 	return true;
 }
-
+/**
+ * @brief Vloží nový klíč do červeno-černého stromu.
+ *
+ * @details
+ * Funkce nejprve provede běžné vložení do binárního vyhledávacího
+ * stromu. Nový uzel je vytvořen jako červený. Následně je zavolána
+ * funkce insert_fixup(), která pomocí přebarvování a rotací obnoví
+ * vlastnosti červeno-černého stromu.
+ *
+ * @par Průběh funkce
+ * 1. Vyhledá pozici, na kterou má být nový klíč vložen.
+ * 2. Pokud již klíč existuje, vložení se neprovede.
+ * 3. Vytvoří nový červený uzel pomocí std::make_unique.
+ * 4. Nastaví jeho ukazatel parent.
+ * 5. Připojí uzel ke kořeni nebo k levému či pravému potomku.
+ * 6. Zvýší tree_size.
+ * 7. Zavolá insert_fixup() pro opravu RB vlastností.
+ * 8. Nastaví kořen na černou barvu.
+ *
+ * @param key Klíč, který má být do stromu vložen.
+ *
+ * @retval true Klíč byl úspěšně vložen.
+ * @retval false Klíč již ve stromu existoval.
+ *
+ * @par Časová složitost
+ * O(log n) pro platný červeno-černý strom.
+ */
 template <typename T>
 bool RBT<T>::insert(const T& key)
 {

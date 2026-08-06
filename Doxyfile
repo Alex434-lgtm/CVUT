@@ -34,3 +34,5 @@ WARN_IF_DOC_ERROR      = YES
 
 QUIET                  = NO
 ALIASES += complexity="\par Časová složitost:"
+SOURCE_BROWSER = YES
+INLINE_SOURCES = YES
