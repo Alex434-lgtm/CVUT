@@ -6,21 +6,7 @@ Implementace červeno-černého binárního vyhledávacího
 
 stromu v jazyce C++.
 
-
-
-\## Vlastnosti
-
-
-
-\- šablonová třída `RBT<T>`
-
-\- vlastnictví uzlů pomocí `std::unique\_ptr`
-
-\- vložení, hledání a mazání v čase `O(log n)`
-
-\- validace vlastností červeno-černého stromu
-
-\- výpis stromu pomocí `operator<<`
+Vypracování úlohy obsahuje main.cpp kde se nachází testovací sada. Červený-černý strom reprezentuje šablonová třída RBT jejichž definici nalezneme v RedBlackTree.h a definici jejích metod nalezneme pak v souboru RedBlackTree.tpp. 
 
 
 
@@ -109,3 +95,5 @@ Dokumentace zdrojového kódu je vytvářena pomocí nástroje
 ```text
 https://cvut-production.up.railway.app/
 ```
+
+Po otevření webové stránky v prohlížeči se nám znovu zobrazí readme soubor a nalevo od něj se nachází navigační strom přes který se můžeme dostat k bližším informacích o metodách a class membrech.
