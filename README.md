@@ -93,6 +93,12 @@ Testovací sada ověřuje zejména:
 - mazání klíčů ve vzestupném pořadí,
 - mazání klíčů v sestupném pořadí,
 - mazání velkého množství klíčů v náhodném pořadí.
+## Zadaní k úloze
+```text
+Implementace Červeného černého stromu,
+
+základní funkcionalita: funkce find pro vyhledávání prvků uvnitř stromu, funkce insert pro vkládání prvků do stromu a funkce delete pro odstranění, všechny tyto funkce musí splňovat složitost O(log(n)). Vypracování bude obsahovat testovací sadu která prověří fungovaní implementace a funkci pro výpis (vizualizaci) stromu. Jazyk implementace je c++.
+```
 ## Dokumentace
 
 Dokumentace zdrojového kódu je vytvářena pomocí nástroje
