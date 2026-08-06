@@ -1,0 +1,36 @@
+PROJECT_NAME           = "Red-Black Tree"
+PROJECT_BRIEF          = "Generic red-black tree implementation in C++"
+
+OUTPUT_DIRECTORY       = docs
+
+INPUT                  = RedBlackTree.h \
+                         src/RedBlackTree.tpp \
+                         include/RedBlackTree.h \
+                         main.cpp \
+                         README.md
+
+FILE_PATTERNS          = *.h \
+                         *.hpp \
+                         *.tpp \
+                         *.cpp \
+                         *.md
+
+RECURSIVE              = YES
+
+USE_MDFILE_AS_MAINPAGE = README.md
+
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+
+EXTRACT_ALL            = NO
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+
+QUIET                  = NO
+ALIASES += complexity="\par Časová složitost:"
