@@ -98,8 +98,8 @@ Testovací sada ověřuje zejména:
 Dokumentace zdrojového kódu je vytvářena pomocí nástroje
 [Doxygen](https://www.doxygen.nl/).
 
-Hlavní stránka dokumentace je:
+Hlavní stránka dokumentace nalezneme na veřejně dostupné url:
 
 ```text
-docs/html/index.html
+https://cvut-production.up.railway.app/
 ```
