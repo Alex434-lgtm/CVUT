@@ -1,5 +1,5 @@
 PROJECT_NAME           = "Červený-černý strom"
-PROJECT_BRIEF          = "Implementace Červený-černý stromu"
+PROJECT_BRIEF          = "Implementace Červeného-černého stromu"
 
 OUTPUT_DIRECTORY       = docs
 
