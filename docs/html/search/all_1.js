@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['clear_0',['clear',['../class_r_b_t.html#af1f645a4c31b519af1d52dff60b58b98',1,'RBT']]]
+  ['delete_5ffixup_0',['delete_fixup',['../class_r_b_t.html#a958b058655a35ea34fa680ec27de0862',1,'RBT']]],
+  ['dokumentace_1',['Dokumentace',['../index.html#autotoc_md4',1,'']]]
 ];

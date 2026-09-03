@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['insert_0',['Testy operace &lt;span class=&quot;tt&quot;&gt;insert&lt;/span&gt;',['../index.html#autotoc_md1',1,'']]]
+  ['k_20úloze_0',['Zadaní k úloze',['../index.html#autotoc_md3',1,'']]]
 ];

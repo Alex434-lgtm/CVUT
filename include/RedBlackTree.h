@@ -121,18 +121,6 @@ public:
      * @complexity O(log n).
      */
 	bool find(const T& key) const;
-	/**
-     * @brief Odstraní klíč ze stromu.
-     *
-     * Po odstranění případně zavolá opravu vlastností
-     * červeno-černého stromu.
-     *
-     * @param key Klíč, který má být odstraněn.
-     * @return true Pokud byl klíč odstraněn.
-     * @return false Pokud klíč ve stromu nebyl nalezen.
-     *
-     * @complexity O(log n).
-     */
 	bool erase(const T& key);
    /**
      * @brief Zjistí, zda je strom prázdný.

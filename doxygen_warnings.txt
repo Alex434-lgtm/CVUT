@@ -1,0 +1,22 @@
+warning: tag INPUT: input source 'RedBlackTree.h' does not exist
+warning: source 'RedBlackTree.h' is not a readable file or directory... skipping.
+C:/Users/hepne/OneDrive/Documents/GitHub/CVUT/include/RedBlackTree.h:25: warning: Member key (variable) of struct node is not documented.
+C:/Users/hepne/OneDrive/Documents/GitHub/CVUT/include/RedBlackTree.h:26: warning: Member c (variable) of struct node is not documented.
+C:/Users/hepne/OneDrive/Documents/GitHub/CVUT/include/RedBlackTree.h:28: warning: Member left (variable) of struct node is not documented.
+C:/Users/hepne/OneDrive/Documents/GitHub/CVUT/include/RedBlackTree.h:29: warning: Member right (variable) of struct node is not documented.
+C:/Users/hepne/OneDrive/Documents/GitHub/CVUT/include/RedBlackTree.h:31: warning: Member parent (variable) of struct node is not documented.
+C:/Users/hepne/OneDrive/Documents/GitHub/CVUT/include/RedBlackTree.h:178: warning: Member find_key(node< T > *n, const T &key) const (function) of class RBT is not documented.
+C:/Users/hepne/OneDrive/Documents/GitHub/CVUT/include/RedBlackTree.h:179: warning: Member minimum(node< T > *n) const (function) of class RBT is not documented.
+C:/Users/hepne/OneDrive/Documents/GitHub/CVUT/include/RedBlackTree.h:197: warning: Member rotate_right(node< T > *n) (function) of class RBT is not documented.
+C:/Users/hepne/OneDrive/Documents/GitHub/CVUT/include/RedBlackTree.h:198: warning: Member owning_pointer(node< T > *n) (function) of class RBT is not documented.
+C:/Users/hepne/OneDrive/Documents/GitHub/CVUT/include/RedBlackTree.h:199: warning: Member get_color(const node< T > *n) const (function) of class RBT is not documented.
+C:/Users/hepne/OneDrive/Documents/GitHub/CVUT/include/RedBlackTree.h:200: warning: Member is_red(const node< T > *n) const (function) of class RBT is not documented.
+C:/Users/hepne/OneDrive/Documents/GitHub/CVUT/include/RedBlackTree.h:201: warning: Member is_black(const node< T > *n) const (function) of class RBT is not documented.
+C:/Users/hepne/OneDrive/Documents/GitHub/CVUT/include/RedBlackTree.h:202: warning: Member print_subtree(const node< T > *n, std::ostream &output, std::size_t depth) const (function) of class RBT is not documented.
+C:/Users/hepne/OneDrive/Documents/GitHub/CVUT/include/RedBlackTree.h:207: warning: Member validate_bst(const node< T > *n) const (function) of class RBT is not documented.
+C:/Users/hepne/OneDrive/Documents/GitHub/CVUT/include/RedBlackTree.h:208: warning: Member validate_red_nodes(const node< T > *n) const (function) of class RBT is not documented.
+C:/Users/hepne/OneDrive/Documents/GitHub/CVUT/include/RedBlackTree.h:209: warning: Member validate_parent_pointers(const node< T > *n) const (function) of class RBT is not documented.
+C:/Users/hepne/OneDrive/Documents/GitHub/CVUT/include/RedBlackTree.h:210: warning: Member black_height(const node< T > *n) const (function) of class RBT is not documented.
+C:/Users/hepne/OneDrive/Documents/GitHub/CVUT/include/RedBlackTree.h:211: warning: Member height_subtree(const node< T > *n) const (function) of class RBT is not documented.
+C:/Users/hepne/OneDrive/Documents/GitHub/CVUT/include/RedBlackTree.h:176: warning: Member root (variable) of class RBT is not documented.
+C:/Users/hepne/OneDrive/Documents/GitHub/CVUT/include/RedBlackTree.h:177: warning: Member tree_size (variable) of class RBT is not documented.

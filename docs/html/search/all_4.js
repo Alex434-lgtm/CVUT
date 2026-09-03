@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['find_0',['find',['../class_r_b_t.html#a58f8a32e46223dabdfd13780768f83ef',1,'RBT']]]
+  ['height_0',['height',['../class_r_b_t.html#a552d499676110519096f0ee72f2e5133',1,'RBT']]]
 ];

@@ -524,11 +524,13 @@ void RBT<T>::insert_fixup(node<T>* n) {
      while ((n != this->root.get() && n->parent != nullptr && n->parent->c == color::Red))
         { if (n->parent->c == color::Black) { return; }
      else if ( n->parent->parent != nullptr && n->parent->parent->right != nullptr && n->parent->parent->left != nullptr && n->parent->parent->right->c == color::Red && n->parent->parent->left->c == color::Red )
-        {
+     {
      n->parent->parent->left->c = color::Black;
-     n->parent->parent->right->c = color::Black; n->parent->parent->c = color::Red;
+     n->parent->parent->right->c = color::Black;
+     n->parent->parent->c = color::Red;
      n = n->parent->parent;
-     continue; }
+     continue;
+     }
      else if (n->parent->c == color::Red) {
             if (n->parent == n->parent->parent->left.get()) {
                 if (n->parent->right.get() == n) { n = n->parent; rotate_left(n); }

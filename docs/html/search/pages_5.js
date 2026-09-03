@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['red_20black_20tree_0',['Red-Black Tree',['../index.html',1,'']]]
+  ['sada_0',['Testovací sada',['../index.html#autotoc_md0',1,'']]],
+  ['strom_1',['Červený-černý strom',['../index.html',1,'']]]
 ];

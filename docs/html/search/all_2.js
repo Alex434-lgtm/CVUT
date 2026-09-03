@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['delete_5ffixup_0',['delete_fixup',['../class_r_b_t.html#a958b058655a35ea34fa680ec27de0862',1,'RBT']]],
-  ['dokumentace_1',['Dokumentace',['../index.html#autotoc_md3',1,'']]]
+  ['empty_0',['empty',['../class_r_b_t.html#a897ffb7909e52cd5096088e2a093ffb9',1,'RBT']]],
+  ['erase_1',['erase',['../class_r_b_t.html#a0eaf79d4ae61a097907977e23f3f6801',1,'RBT::erase()'],['../index.html#autotoc_md2',1,'Testy operace &lt;span class=&quot;tt&quot;&gt;erase&lt;/span&gt;']]]
 ];

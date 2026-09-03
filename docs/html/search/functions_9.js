@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['validate_0',['validate',['../class_r_b_t.html#a0b6844c783e5ccf71ab9c072c698dac5',1,'RBT']]]
+  ['size_0',['size',['../class_r_b_t.html#a45c19d37c30cd4644fab50862128d353',1,'RBT']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['black_20tree_0',['Red-Black Tree',['../index.html',1,'']]]
+  ['dokumentace_0',['Dokumentace',['../index.html#autotoc_md4',1,'']]]
 ];

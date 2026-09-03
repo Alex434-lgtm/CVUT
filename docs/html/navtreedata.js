@@ -24,13 +24,14 @@
 */
 var NAVTREE =
 [
-  [ "Red-Black Tree", "index.html", [
+  [ "Červený-černý strom", "index.html", [
     [ "Classes", "annotated.html", [
       [ "Testovací sada", "index.html#autotoc_md0", [
         [ "Testy operace <span class=\"tt\">insert</span>", "index.html#autotoc_md1", null ],
         [ "Testy operace <span class=\"tt\">erase</span>", "index.html#autotoc_md2", null ]
       ] ],
-      [ "Dokumentace", "index.html#autotoc_md3", null ],
+      [ "Zadaní k úloze", "index.html#autotoc_md3", null ],
+      [ "Dokumentace", "index.html#autotoc_md4", null ],
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
       [ "Class Members", "functions.html", [
